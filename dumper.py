@@ -25,7 +25,7 @@ def dump(serial_port, rate, filename="dump_data.csv"):
                 sys.exit(0)
 
     except serial.SerialException:
-        print("[!] Could not open serial port. The port does not exsists or you have no premissions to open it (try run it as root)")
+        print("[!] Could not open serial port. The port does not exsists or you have no premissions to open it (try run as root)")
         sys.exit(2)
     except serial.SerialTimeoutException:
         print("[!] Serial port timed out.")
